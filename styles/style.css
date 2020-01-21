@@ -296,13 +296,10 @@ button:active {
     vertical-align: bottom;
 }
 
-.imagen-byn:hover {
-    opacity: 0.8;
-
-}
 
 .contenedor-img .imagenes div {
     line-height: 0;
+    width: 33.3%;
 }
 
 .margen {
@@ -313,10 +310,8 @@ button:active {
 .container-svg {
     display: flex;
     padding-top: 25px;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
-    margin-left: 250px;
-    margin-right: 250px;
     margin-top: 64px;
 
 }
@@ -327,8 +322,7 @@ button:active {
     cursor: pointer;
 }
 
-.container-svg div:hover {
-    opacity: 0.5;
+.container-svg div:hover { 
     text-decoration: line-through;
 }
 
@@ -381,8 +375,7 @@ footer i {
 footer {
     display: flex;
     justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0px 100px 0px 100px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
