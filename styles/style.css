@@ -228,7 +228,7 @@ h3 {
 
 
 .section-phone {
-    position: absolute;
+    transform: translateY(-20px);
     margin-top: -150px;
     width: 100%;
 }
@@ -254,7 +254,6 @@ p {
     color: #060A24;
     letter-spacing: 0;
     line-height: 22px;
-    width: 100%;
     margin-top: 1rem;
 }
 
@@ -296,10 +295,13 @@ button:active {
     vertical-align: bottom;
 }
 
+.imagen-byn:hover {
+    opacity: 0.8;
+
+}
 
 .contenedor-img .imagenes div {
     line-height: 0;
-    width: 33.3%;
 }
 
 .margen {
@@ -310,8 +312,10 @@ button:active {
 .container-svg {
     display: flex;
     padding-top: 25px;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
     margin-top: 64px;
 
 }
@@ -322,7 +326,8 @@ button:active {
     cursor: pointer;
 }
 
-.container-svg div:hover { 
+.container-svg div:hover {
+    opacity: 0.5;
     text-decoration: line-through;
 }
 
@@ -375,7 +380,8 @@ footer i {
 footer {
     display: flex;
     justify-content: space-between;
-    margin: 0px 100px 0px 100px;
+    margin-left: 100px;
+    margin-right: 100px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
