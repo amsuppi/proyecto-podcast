@@ -247,6 +247,9 @@ h3 {
     margin: auto;
     width: 600px;
 }
+.section-phone p{
+    width: 100%;
+}
 
 p {
     font-family: 'IBM Plex Mono', monospace;
@@ -293,15 +296,13 @@ button:active {
     padding: 0px;
     border: 0px;
     vertical-align: bottom;
+    width: 100%;
 }
 
-.imagen-byn:hover {
-    opacity: 0.8;
-
-}
 
 .contenedor-img .imagenes div {
     line-height: 0;
+    width: 33.3%;
 }
 
 .margen {
@@ -312,10 +313,8 @@ button:active {
 .container-svg {
     display: flex;
     padding-top: 25px;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
-    margin-left: 250px;
-    margin-right: 250px;
     margin-top: 64px;
 
 }
@@ -327,7 +326,6 @@ button:active {
 }
 
 .container-svg div:hover {
-    opacity: 0.5;
     text-decoration: line-through;
 }
 
@@ -393,7 +391,31 @@ footer a {
 footer a:visited {
     color: #060A24;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    .section-azul {
+        clip-path: polygon(0 10%, 100% 1%, 100% 90%, 0% 100%);
+       
+    }
+    .salto-linea{
+        display: inline;
+    }
 
+    .div-phone{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .salto-linea {
+        display: block;
+    }
+    
+    .margen{
+        margin-left: 100px;
+    }
+
+    
+  }
 
 @media only screen and (max-width: 768px) {
     .logo {
@@ -558,7 +580,7 @@ footer a:visited {
     }
 
     .section-phone .div-phone div {
-        width: fit-content;
+        width: 100%;
     }
 
     p {
@@ -571,6 +593,10 @@ footer a:visited {
     }
 
     .imagen-byn {
+        width: 100%;
+    }
+
+    .contenedor-img .imagenes div {
         width: 100%;
     }
 
